@@ -1,7 +1,14 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
-    <nav style={{ padding: "10px", background: "#222", color: "#fff" }}>
-      <h2>DevPrep Hub</h2>
+    <nav style={{ padding: "10px", background: "#222" }}>
+      <Link to="/" style={{ color: "#fff", marginRight: "10px" }}>
+        Home
+      </Link>
+      <Link to="/questions" style={{ color: "#fff" }}>
+        Questions
+      </Link>
     </nav>
   );
 }

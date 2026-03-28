@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
-
-function App() {
-  return (
-    <div>
-      <h1>DevPrep Hub 🚀</h1>
-    </div>
-  );
-}
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Questions from "./pages/Questions";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <h1>Welcome to DevPrep Hub 🚀</h1>
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/questions" element={<Questions />} />
+      </Routes>
+    </Router>
   );
 }
 
