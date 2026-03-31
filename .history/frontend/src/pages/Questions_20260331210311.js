@@ -17,7 +17,5 @@ function Questions() {
     </div>
   );
 }
-const [search, setSearch] = useState("");
-const [category, setCategory] = useState("All");
 
 export default Questions;
