@@ -66,6 +66,7 @@ function QuestionDetail() {
   );
 }
 
+export default QuestionDetail;
 }
 const [search, setSearch] = useState("");
 const [category, setCategory] = useState("All");
