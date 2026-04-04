@@ -12,7 +12,6 @@ function QuestionDetail() {
   const { id } = useParams();
 
   const question = questions.find((q) => q.id === parseInt(id));
-  const [solvedQuestions, setSolvedQuestions] = useState([]);
 
   const [showSolution, setShowSolution] = useState(false);
   const [isSolved, setIsSolved] = useState(false);
